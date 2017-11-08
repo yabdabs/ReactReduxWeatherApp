@@ -6,7 +6,7 @@ import ReduxPromise from 'redux-promise'
 
 
 import App from './components/app';
-import reducers from './reducers';
+import reducers from './reducers/index';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
@@ -15,3 +15,6 @@ ReactDOM.render(
     <App />
   </Provider>
   , document.querySelector('.container'));
+
+
+ 
