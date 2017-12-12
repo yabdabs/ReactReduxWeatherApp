@@ -10,6 +10,7 @@ import { fetchWeather } from '../actions/index'
 
 class SearchBar extends Component{
 	constructor(props){
+		// A constructor can use the super keyword to call the constructor of a parent class
 		super(props)
 
 		this.state = {term: ''}

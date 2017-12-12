@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Charts from '../components/charts'
+import GoogleMap from '../components/map'
 
 //get data into this component bc it is a container
 //1. import the connect function from 'react-redux'
@@ -26,9 +27,15 @@ class WeatherList extends Component{
 		})
 		console.log(temps)
 
+		//using destructuing to create lon and lat variables
+		// {lon, lat} = cityData.city.coord
+
+		const coordinates = cityData.city.coord
+		console.log(coordinates)
+
 		return(
 			<tr key={name}>
-				<td>{name}</td>
+				<td className = 'test'><GoogleMap latlng = {coordinates}/></td>
 				<td>
 					<Charts data={temps} color='red' units='K'/>
 				</td>
