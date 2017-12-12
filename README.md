@@ -20,9 +20,6 @@ Search Results
 ![search results](./images/search_results2.PNG)
 
 
-User can click on another video to render <i></i>n the play section
-![video-click](./images/video-click.PNG)
-
 ### Technologies:
 * React
 * Redux
